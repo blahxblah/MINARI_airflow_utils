@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MINARI_airflow_utils_pip
 ### practice
 
