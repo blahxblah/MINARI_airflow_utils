@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="0" hostname="KJH" name="pytest" skipped="0" tests="1" time="0.123" timestamp="2023-06-09T15:13:39.765074"><testcase classname="" name="tests.MINARI_airflow_utils_pip.test_MINARI_airflow_utils_pip" time="0.000"><error message="collection failure">ImportError while importing test module '/home/kjh/code/etl/MINARI_airflow_utils/tests/MINARI_airflow_utils_pip/test_MINARI_airflow_utils_pip.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-../../../.pyenv/versions/3.7.16/lib/python3.7/importlib/__init__.py:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-tests/MINARI_airflow_utils_pip/test_MINARI_airflow_utils_pip.py:2: in &lt;module&gt;
-    import MINARI_airflow_utils_pip
-src/MINARI_airflow_utils_pip/MINARI_airflow_utils_pip.py:14: in &lt;module&gt;
-    from airflow.operators.bash import BashOperator
-E   ModuleNotFoundError: No module named 'airflow'</error></testcase></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="KJH" name="pytest" skipped="0" tests="1" time="0.831" timestamp="2023-06-09T15:21:09.609837"><testcase classname="tests.MINARI_airflow_utils_pip.test_MINARI_airflow_utils_pip" name="test_ping" time="0.001"><failure message="TypeError: gen_bash_task() missing 3 required positional arguments: 'name', 'cmd', and 'dag'">def test_ping():
+        sys.argv = ['foo', '10']
+&gt;       MINARI_airflow_utils_pip.gen_bash_task()
+E       TypeError: gen_bash_task() missing 3 required positional arguments: 'name', 'cmd', and 'dag'
+
+tests/MINARI_airflow_utils_pip/test_MINARI_airflow_utils_pip.py:7: TypeError</failure></testcase></testsuite></testsuites>
